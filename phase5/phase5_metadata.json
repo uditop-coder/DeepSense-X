@@ -1,0 +1,23 @@
+{
+  "phase": 5,
+  "project": "DeepSense-X",
+  "dataset": "MetroPT-3",
+  "base_model": "Phase 4 Hybrid LSTM-Transformer Autoencoder",
+  "threshold": 2.5605099201202393,
+  "threshold_source": "Loaded from Phase 4 metadata",
+  "mc_runs": 10,
+  "mc_test_size": 2000,
+  "mean_mc_uncertainty": 0.004963838029652834,
+  "missing_sensor_features": [
+    "DV_eletric",
+    "TP2",
+    "Towers"
+  ],
+  "drift_sensor": "LPS",
+  "notes": [
+    "MC-dropout variability is used as an empirical uncertainty indicator.",
+    "Sensor perturbation effects are sensitivity explanations, not causal attributions.",
+    "Robustness corruptions are synthetic stress tests.",
+    "No advance failure prediction claim is made."
+  ]
+}

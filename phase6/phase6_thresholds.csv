@@ -1,0 +1,4 @@
+Model,Validation 99th percentile threshold,Validation windows above threshold,Validation flagged percentage
+Phase 2 LSTM,3.2413036823272705,20,1.0
+Phase 3 Transformer,1.964277744293213,20,1.0
+Phase 4 Hybrid,2.5605099201202393,20,1.0

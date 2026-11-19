@@ -1,0 +1,65 @@
+{
+  "phase": 6,
+  "project": "DeepSense-X",
+  "dataset": "MetroPT-3",
+  "seed": 42,
+  "sample_sizes": {
+    "train": 5000,
+    "validation": 2000,
+    "test": 10000
+  },
+  "threshold_percentile": 99,
+  "thresholds": {
+    "Phase 2 LSTM": 3.2413036823272705,
+    "Phase 3 Transformer": 1.964277744293213,
+    "Phase 4 Hybrid": 2.5605099201202393
+  },
+  "best_sampled_test_f1_model": "Phase 2 LSTM",
+  "metrics": [
+    {
+      "Model": "Phase 2 LSTM",
+      "Precision (%)": 54.17106652587117,
+      "Recall (%)": 99.4186046511628,
+      "F1-score (%)": 70.12987012987013,
+      "Accuracy (%)": 95.63000000000001,
+      "False positives": 434.0,
+      "False negatives": 3.0,
+      "True positives": 513.0,
+      "True negatives": 9050.0,
+      "Predicted anomalies": 947.0,
+      "Anomaly rate (%)": 9.47
+    },
+    {
+      "Model": "Phase 3 Transformer",
+      "Precision (%)": 52.6694045174538,
+      "Recall (%)": 99.4186046511628,
+      "F1-score (%)": 68.85906040268456,
+      "Accuracy (%)": 95.36,
+      "False positives": 461.0,
+      "False negatives": 3.0,
+      "True positives": 513.0,
+      "True negatives": 9023.0,
+      "Predicted anomalies": 974.0,
+      "Anomaly rate (%)": 9.74
+    },
+    {
+      "Model": "Phase 4 Hybrid",
+      "Precision (%)": 53.83001049317944,
+      "Recall (%)": 99.4186046511628,
+      "F1-score (%)": 69.84343090537782,
+      "Accuracy (%)": 95.57,
+      "False positives": 440.0,
+      "False negatives": 3.0,
+      "True positives": 513.0,
+      "True negatives": 9044.0,
+      "Predicted anomalies": 953.0,
+      "Anomaly rate (%)": 9.53
+    }
+  ],
+  "notes": [
+    "All three models use identical sampled validation and test windows.",
+    "Each threshold is calibrated on that model validation reconstruction errors.",
+    "Event-period detection does not establish advance failure prediction.",
+    "Results are sampled-window experiments, not full-test-set results."
+  ]
+}

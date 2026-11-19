@@ -1,0 +1,36 @@
+{
+  "phase": 4,
+  "model": "Hybrid LSTM-Transformer Autoencoder",
+  "input_shape": [
+    60,
+    13
+  ],
+  "lstm_units": 32,
+  "embedding_dimension": 32,
+  "attention_heads": 2,
+  "feed_forward_dimension": 64,
+  "dropout_rate": 0.1,
+  "training_windows_available": 214791,
+  "training_windows_used": 5000,
+  "validation_windows_available": 230389,
+  "validation_windows_used": 2000,
+  "test_windows_available": 524836,
+  "test_windows_used": 10000,
+  "threshold_percentile": 99.0,
+  "anomaly_threshold": 2.5605099201202393,
+  "precision": 0.5383001049317944,
+  "recall": 0.9941860465116279,
+  "f1_score": 0.6984343090537781,
+  "accuracy": 0.9557,
+  "confusion_matrix": [
+    [
+      9044,
+      440
+    ],
+    [
+      3,
+      513
+    ]
+  ],
+  "evaluation_note": "Preliminary sampled event-period detection, not pre-failure forecasting."
+}

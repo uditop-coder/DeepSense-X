@@ -1,0 +1,4 @@
+Model,Event-labelled windows,Detected event windows,Missed event windows,Event-window detection rate (%)
+Phase 2 LSTM,516,513,3,99.4186046511628
+Phase 3 Transformer,516,513,3,99.4186046511628
+Phase 4 Hybrid,516,513,3,99.4186046511628

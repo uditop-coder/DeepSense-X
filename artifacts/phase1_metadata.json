@@ -1,0 +1,32 @@
+{
+  "dataset": "MetroPT-3",
+  "dataset_id": 791,
+  "dataset_doi": "10.24432/C5VW3R",
+  "features": [
+    "TP2",
+    "TP3",
+    "H1",
+    "DV_pressure",
+    "Reservoirs",
+    "Oil_temperature",
+    "Motor_current",
+    "COMP",
+    "DV_eletric",
+    "Towers",
+    "MPG",
+    "LPS",
+    "Pressure_switch"
+  ],
+  "number_of_features": 13,
+  "window_size": 60,
+  "training_period": "February 2020",
+  "validation_period": "March 2020",
+  "testing_period": "April 2020 to June 16, 2020",
+  "baseline_threshold": 3.1391968727111816,
+  "baseline_precision": 0.5593,
+  "baseline_recall": 0.9948,
+  "baseline_f1": 0.716,
+  "available_failure_events": 3,
+  "excluded_failure_event": "July 15, 2020 - not present in downloaded data",
+  "important_note": "Preliminary baseline results; continuous RUL labels are unavailable."
+}

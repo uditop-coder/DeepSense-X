@@ -1,0 +1,26 @@
+
+# Original datasets
+raw/
+MetroPT3(AirCompressor).csv
+metropt_raw.csv
+
+# Large processed data
+processed/*.npz
+
+# Trained model checkpoints
+artifacts/*.keras
+artifacts/*.h5
+
+# Large experiment arrays
+phase5/*.npz
+phase6/*.npz
+
+# Python and Jupyter temporary files
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+
+# Environment and secrets
+.env
+*.token
